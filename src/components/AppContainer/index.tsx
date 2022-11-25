@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import Navbar from '../Navbar'
-import SidePanel from '../SidePanel'
+import SideMenu from '../SidePanel'
 
 export interface Hover{
     elevation:number,
     width:string
   }
-const Index = (props:any) => {
+const AppContainer = (props:any) => {
     const [hover,setHover]=useState<Hover>({
         elevation:0,
         width:"5%"
@@ -15,11 +15,11 @@ const Index = (props:any) => {
     <div style={{marginTop:"3.2rem"}}>
         <Navbar hover={hover} setHover={setHover}/>
       <div style={{display:"flex"}}>
-      <SidePanel hover={hover} setHover={setHover}/>
+      <SideMenu hover={hover} setHover={setHover}/>
       {props.children}
       </div>
     </div>
   )
 }
 
-export default Index
+export default AppContainer

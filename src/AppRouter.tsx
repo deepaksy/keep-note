@@ -7,17 +7,17 @@ import {
 
 import HomePage from './Home'
 import Accounts from './pages/Accounts'
-import MenuBarSidePanel from "./components/MenubarSidePane"
+import AppContainer from "./components/AppContainer"
 
 const AppRouter = ():ReactElement=>{
   return(
     <Router>
-      <MenuBarSidePanel key={null} type={''} props={undefined}>
+      <AppContainer key={null} type={''} props={undefined}>
       <Routes>
         <Route path='/' element={<HomePage/>} />
         <Route path='/accounts' element={<Accounts/>} />
       </Routes>
-      </MenuBarSidePanel>
+      </AppContainer>
     </Router>
   )
 }

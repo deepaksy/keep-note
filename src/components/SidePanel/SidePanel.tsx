@@ -1,12 +1,12 @@
 import { Paper } from '@mui/material'
 
 
-interface Hover{
+export interface Hover{
   elevation:number,
   width:string
 }
 
-const SidePanel = ({hover,setHover}:{hover:Hover,setHover:(hover:Hover)=>void}) => {
+const SidePanel = ({hover,setHover,children}:{hover:Hover,setHover:(hover:Hover)=>void,children?:JSX.Element}) => {
   const {elevation,width}=hover;
 
   const handleHover = ():void=>{
@@ -35,10 +35,7 @@ const SidePanel = ({hover,setHover}:{hover:Hover,setHover:(hover:Hover)=>void}) 
       // left:0,
       // right:0
     }} elevation={elevation} >
-        <button>Click</button>
-        <button>Click</button>
-        <button>Click</button>
-        <button>Click</button>
+        {children}
     </Paper>
   )
 }
