@@ -12,14 +12,22 @@ interface Hover{
     elevation:number,
     width:string
   }
+
+  type position="fixed"|"sticky"
+  const fixed:position="fixed"
 const styles = {
     navbarContainer:{
+        position:fixed,
+        zIndex:5,
         display:"flex",
         alignItems:"center",
         borderStyle:"solid",
         borderColor:"black",
         borderWidth:"0 0 thin",
-        justifyContent:"space-between"
+        justifyContent:"space-between",
+        top:0,
+        left:0,
+        right:0
     },
     logo:{
         marginLeft:10,

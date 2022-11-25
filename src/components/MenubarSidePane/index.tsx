@@ -12,7 +12,7 @@ const Index = (props:any) => {
         width:"5%"
       });
   return (
-    <div>
+    <div style={{marginTop:"3.2rem"}}>
         <Navbar hover={hover} setHover={setHover}/>
       <div style={{display:"flex"}}>
       <SidePanel hover={hover} setHover={setHover}/>
