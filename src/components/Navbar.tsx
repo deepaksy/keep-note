@@ -4,7 +4,7 @@ import MatButton from "./Button"
 import NoteIcon from '../assets/notes.svg'
 import {Typography} from '@mui/material'
 import {IconButton} from '@mui/material'
-import SearchBar from "./SearchBar"
+import SearchBar from "./searchBar/SearchBar"
 import MenuIcon from '@mui/icons-material/Menu';
 import ProfileAvatar from "./ProfileAvatar"
 

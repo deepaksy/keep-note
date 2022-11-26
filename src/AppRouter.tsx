@@ -8,6 +8,7 @@ import {
 import HomePage from './Home'
 import Accounts from './pages/Accounts'
 import AppContainer from "./components/AppContainer"
+import Beta from './components/beta'
 
 const AppRouter = ():ReactElement=>{
   return(
@@ -16,6 +17,7 @@ const AppRouter = ():ReactElement=>{
       <Routes>
         <Route path='/' element={<HomePage/>} />
         <Route path='/accounts' element={<Accounts/>} />
+        <Route path='/beta' element={<Beta/>}/>
       </Routes>
       </AppContainer>
     </Router>
